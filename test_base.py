@@ -5,7 +5,7 @@ import jieba
 import numpy as np
 from keras.models import load_model
 
-model_path = './cdsa_b/dvd+electronics.h5'
+model = load_model('./cdsa_b/dvd+electronics.h5')
 train = pd.read_csv('../data/dvd+electronics.csv')
 test = pd.read_csv('../data/dvd.csv')
 
