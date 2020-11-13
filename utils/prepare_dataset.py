@@ -4,7 +4,7 @@ import text_util
 
 pos1 = text_util.load_txt("..\raw_data\books\review_negative")
 pos2 = text_util.load_txt("..\raw_data\books\review_positive")
-pos=[]
+file_object=[]
 file_object=pos1+pos2
 
 try:
