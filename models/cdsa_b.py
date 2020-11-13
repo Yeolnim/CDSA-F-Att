@@ -7,8 +7,8 @@ import pandas as pd
 import jieba
 import numpy as np
 
-model_path = 'CDSA-F-Att/models/cdsa_b/kitchen+video.h5'
-train = pd.read_csv('CDSA-F-Att/data/kitchen+video.csv')
+model_path = './cdsa_b/kitchen+video.h5'
+train = pd.read_csv('../data/kitchen+video.csv')
 
 train['sen_cut'] = train['comment'].apply(jieba.lcut)
 X_train = train['sen_cut'].apply(lambda x: ' '.join(x)).tolist()
