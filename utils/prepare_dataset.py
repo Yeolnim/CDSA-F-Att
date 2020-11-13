@@ -2,8 +2,9 @@ import pandas as pd
 from sklearn.utils import shuffle
 import text_util
 
-pos1 = text_util.load_txt("..\raw_data\books\review_negative")
-pos2 = text_util.load_txt("..\raw_data\books\review_positive")
+pos1 = text_util.load_txt("../raw_data/books/review_negative")
+pos2 = text_util.load_txt("../raw_data/books/review_positive")
+
 file_object=[]
 file_object=pos1+pos2
 
@@ -23,4 +24,4 @@ for i in range(len(r)):
 
 result=shuffle(result)
 #print(result)
-result.to_csv("..\data\books.csv",encoding='utf-8')
+result.to_csv("../data/books.csv",encoding='utf-8')
