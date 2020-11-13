@@ -5,9 +5,9 @@ import jieba
 import numpy as np
 from keras.models import load_model
 
-model = load_model('./cdsa_b/dvd+electronics.h5')
-train = pd.read_csv('../data/dvd+electronics.csv')
-test = pd.read_csv('../data/dvd.csv')
+model = load_model('./models/cdsa_b/dvd+electronics.h5')
+train = pd.read_csv('./data/dvd+electronics.csv')
+test = pd.read_csv('./data/dvd.csv')
 
 train['sen_cut'] = train['comment'].apply(jieba.lcut)
 test["comment"] = test['comment'].astype(str)
