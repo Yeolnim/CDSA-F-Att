@@ -20,7 +20,7 @@ for i in range(len(r)):
            result=result.append({'comment':r[i],'label':1},ignore_index=True)
         else:
            result = result.append({'comment': r[i], 'label': 0}, ignore_index=True)
-# print(result)
-# result=shuffle(result)
-print(result)
+
+result=shuffle(result)
+#print(result)
 result.to_csv("..\data\books.csv",encoding='utf-8')
