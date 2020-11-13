@@ -38,9 +38,9 @@ class AttentionLayer(Layer):
 
 a=AttentionLayer()
 
-model = load_model('./cdsa_f_att/dvd+electronics.h5',custom_objects={'AttentionLayer': a})
-train = pd.read_csv('../data/dvd+electronics.csv')
-test = pd.read_csv('../data/dvd.csv')
+model = load_model('./models/cdsa_f_att/dvd+electronics.h5',custom_objects={'AttentionLayer': a})
+train = pd.read_csv('./data/dvd+electronics.csv')
+test = pd.read_csv('./data/dvd.csv')
 
 train['sen_cut'] = train['comment'].apply(jieba.lcut)
 test['comment'] = test['comment'].astype(str)
