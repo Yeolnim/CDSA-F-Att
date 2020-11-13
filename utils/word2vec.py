@@ -12,6 +12,4 @@ print(model.similarity(u"good", u"nice"))
 
 # 保存模型
 model.save("..//dvd+electronics.vec")
-import gensim
-# word2vec = gensim.models.KeyedVectors.load_word2vec_format('book+dvd.txt',binary=True)
 model = Word2Vec.load("../w2v/dvd+electronics.vec")
