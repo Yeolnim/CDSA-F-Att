@@ -88,7 +88,7 @@ from keras.layers import Input, Dense, GRU, LSTM, Activation, Dropout, Embedding
 from keras.layers import Multiply, Concatenate, Dot
 from sklearn.metrics import f1_score
 
-# lstm
+# BiLSTM
 wv_dim = 1068
 n_timesteps = maxlen
 inputs = Input(shape=(maxlen,))
