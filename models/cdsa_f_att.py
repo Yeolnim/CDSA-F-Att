@@ -122,7 +122,7 @@ class AttentionLayer(Layer):
 wv_dim = 1068
 n_timesteps = maxlen
 
-# lstm模型
+# BiLSTM
 inputs = Input(shape=(maxlen,))
 embedding_sequences = Embedding(vocab_size+1, wv_dim, input_length=maxlen, weights=[embedding_matrix])(inputs)
 lstm = Bidirectional(LSTM(128, return_sequences= True))(embedding_sequences)
