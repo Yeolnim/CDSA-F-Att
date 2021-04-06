@@ -18,7 +18,7 @@ Codes for our paper: "Sentiment Analysis of Cross-Domain Product Reviews Based o
 
     bert-serving-start -model_dir /BERT/uncased_L-12_H-768_A-12
 
-##Usage
+## Usage
 ### Training
     python train_cdsa_*.py
 ### Testing
