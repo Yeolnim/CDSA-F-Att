@@ -40,13 +40,14 @@ We made our efforts to make our benchmarks reproducible. However, the performanc
 ## Citing
 If you use CDSA-F-Att in a scientific publication, we would appreciate references to the following BibTex entry:
     
-    @article{
-       title = {融合特征与注意力的跨领域产品评论情感分析},
-       author = {祁瑞华, 简悦, 郭旭, 关菁华, 杨明昕},
-       journal = {数据分析与知识发现},
-       url = {http://manu44.magtech.com.cn/Jwk_infotech_wk3/CN/abstract/article_4891.shtml},
-       doi = {10.11925/infotech..2020.0535}
-       year = {2020}
+    @article{祁瑞华、简悦、郭旭、关菁华、杨明昕2020融合特征与注意力的跨领域产品评论情感分析,
+       title={融合特征与注意力的跨领域产品评论情感分析},
+       author={祁瑞华、简悦、郭旭、关菁华、杨明昕},
+       journal={数据分析与知识发现},
+       volume={v.4;No.48},
+       number={12},
+       pages={89-98},
+       year={2020},
     }
 
 ## Licence
