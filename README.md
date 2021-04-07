@@ -16,7 +16,7 @@ Codes for our paper: "Sentiment Analysis of Cross-Domain Product Reviews Based o
 * [uncased_L-12_H-768_A-12](https://github.com/google-research/bert)
 ### 2. Start the BERT service
 
-    bert-serving-start -model_dir /BERT/uncased_L-12_H-768_A-12
+    bert-serving-start -model_dir /uncased_L-12_H-768_A-12
 
 ## Usage
 ### Training
