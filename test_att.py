@@ -49,9 +49,8 @@ model = load_model('./model/cdsa_f_att/*.h5', custom_objects={'AttentionLayer': 
 train = pd.read_csv('./data/*.csv')
 test = pd.read_csv('./data/*.csv')
 
-train['sen_cut'] = train['comment'].apply(jieba.lcut)
-test['comment'] = test['comment'].astype(str)
-test['sen_cut'] = test['comment'].apply(jieba.lcut)
+train['sen_cut'] = train['comment'].astype(str).apply(jieba.lcut)
+test['sen_cut'] = test['comment'].astype(str).apply(jieba.lcut)
 X_train = train['sen_cut'].apply(lambda x: ' '.join(x)).tolist()
 X_test = test['sen_cut'].apply(lambda x: ' '.join(x)).tolist()
 text = np.array(X_train)
