@@ -7,16 +7,17 @@ Codes for our paper: "Sentiment Analysis of Cross-Domain Product Reviews Based o
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 
 ## Requirement
-* Python >= 3.7
-* Keras >= 2.3.0
-* [bert-as-service](https://github.com/hanxiao/bert-as-service) = 1.9.7
+* Python = 3.7
+* Tensorflow = 1.13.1
+* Keras = 2.2.4
+* [bert-as-service](https://github.com/hanxiao/bert-as-service) = 1.10.0
 
 ## BERT Language Model
 ### 1. Download the Pre-trained BERT Model
 * [uncased_L-12_H-768_A-12](https://github.com/google-research/bert)
 ### 2. Start the BERT service
 
-    bert-serving-start -model_dir /uncased_L-12_H-768_A-12
+    bert-serving-start -model_dir /bert/uncased_L-12_H-768_A-12
 
 ## Usage
 ### Training
