@@ -21,7 +21,7 @@ w2v_path = './w2v/*.vec'
 model_path = './model/cdsa_f_att/*.h5'
 train = pd.read_csv('./data/*.csv')
 
-train['sen_cut'] = train['comment'].apply(jieba.lcut)
+train['sen_cut'] = train['comment'].astype(str).apply(jieba.lcut)
 X_train = train['sen_cut'].apply(lambda x: ' '.join(x)).tolist()
 y_train = pd.get_dummies((np.asarray(train["label"])))
 text = np.array(X_train)
